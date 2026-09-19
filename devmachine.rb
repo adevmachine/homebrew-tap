@@ -5,13 +5,13 @@
 class Devmachine < Formula
   desc "Set up and operate a personal development VPS"
   homepage "https://github.com/adevmachine/cli"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adevmachine/cli/releases/download/v0.2.0/cli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "7a0f47f4269cd6e0290c823fbf8c5775cf1694eafe7837cb683bec7e434d911e"
+      url "https://github.com/adevmachine/cli/releases/download/v0.3.0/cli_0.3.0_darwin_amd64.tar.gz"
+      sha256 "659e477ee25c573ec0f2ea22981c61ee07e0c11dcf552d5ee1332b0e589d51c8"
 
       define_method(:install) do
         bin.install "devmachine"
@@ -19,8 +19,8 @@ class Devmachine < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adevmachine/cli/releases/download/v0.2.0/cli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "30ce08e62db3bfb005d879752792e0ec22f64d0682556f57f5e1b91d1933703c"
+      url "https://github.com/adevmachine/cli/releases/download/v0.3.0/cli_0.3.0_darwin_arm64.tar.gz"
+      sha256 "52412bdbd7b6b397356c4a38fe7e543694d5eeb40d43a9125c18ff5ccbf1d514"
 
       define_method(:install) do
         bin.install "devmachine"
@@ -31,16 +31,16 @@ class Devmachine < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adevmachine/cli/releases/download/v0.2.0/cli_0.2.0_linux_amd64.tar.gz"
-      sha256 "dacf1d52a6df81e9939581a209056811e9b87fbca354ecdf5360a74311624cc3"
+      url "https://github.com/adevmachine/cli/releases/download/v0.3.0/cli_0.3.0_linux_amd64.tar.gz"
+      sha256 "691df7d52f4fc5a7e54e3c365eb6bd21305bd11c17b0440a585899a2758dc146"
       define_method(:install) do
         bin.install "devmachine"
         bin.install_symlink bin/"devmachine" => "advm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adevmachine/cli/releases/download/v0.2.0/cli_0.2.0_linux_arm64.tar.gz"
-      sha256 "542d13a31a15560257c49e5d2ba704cecf954cb1f5c5c9d774b3f56cf08053b2"
+      url "https://github.com/adevmachine/cli/releases/download/v0.3.0/cli_0.3.0_linux_arm64.tar.gz"
+      sha256 "c8db4f1511b95f5054e07671b595bc4074dfa887a296424e00adc02b35ae226f"
       define_method(:install) do
         bin.install "devmachine"
         bin.install_symlink bin/"devmachine" => "advm"
