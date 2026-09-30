@@ -1,0 +1,14 @@
+Casks/devmachine-app.rb
+  h_4716746d570273 2-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "01eb1b562cd8dd841eef7c29e141babc11ee8430",
+  "prompts": {},
+  "humans": {
+    "h_4716746d570273": {
+      "author": "Djalma Araújo <djalma@nossomos.cc>"
+    }
+  }
+}
